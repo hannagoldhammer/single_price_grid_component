@@ -1,0 +1,122 @@
+:root {
+    --dark-blue-green: rgb(25, 188, 166);
+    --light-blue-green: rgb(100, 200, 183);
+    --bright-green: rgb(205, 235, 72);
+    --grey: rgba(149, 149, 149, 0.938);
+    --text-white: white;
+}
+
+body{
+    background-color: aliceblue;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;;
+}
+
+h1{
+    color: var(--dark-blue-green);
+    font-size: 20px;
+}
+
+.sub-heading{
+    color: var(--bright-green);
+    font-weight: 700;
+}
+
+.description{
+    color: var(--grey);
+    line-height: 1.5rem;
+}
+
+.grid-container{
+    margin: 5rem 1rem;
+}
+@media screen and (min-width: 600px) {
+    .grid-container{
+        max-width: 70%;
+        display: grid;
+        grid-template-areas: "header header";
+        grid-template-columns: 50%;
+        margin: 5rem 1rem;
+    }
+}
+@media screen and (min-width: 800px) {
+    .grid-container{
+        max-width: 70%;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+}
+
+.grid-item{
+    padding: 1rem;
+}
+
+.grid-item-1{
+    background-color: white;
+    grid-area: header;
+} 
+
+.grid-item-2{
+    background-color: var(--dark-blue-green);
+    font-size: 13px;
+    color: var(--text-white);
+    font-weight: bold;
+} 
+
+.price-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.currency{
+    font-size: 30px;
+    margin-right: 1rem;
+}
+
+.price{
+    margin: 0;
+}
+
+.duration{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.duration-description{
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+button{
+    width: 100%;
+    color: var(--text-white);
+    font-size: large;
+    box-shadow: 4px 6px 11px -2px #828282;
+    background-color: var(--bright-green);
+    margin: 1rem 0;
+    border: 0;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.grid-item-3{
+    background-color: var(--light-blue-green);
+    color: var(--text-white);
+} 
+
+.footer-header{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-bullets{
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 0.7rem;
+}
+
